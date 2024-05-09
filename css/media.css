@@ -93,9 +93,6 @@
 }
 
 @media screen and (max-width: 599px) {
-  .header-top {
-    position: sticky;
-  }
   .header-content {
     flex-direction: column;
     padding: 0 0 48px;
