@@ -1,0 +1,283 @@
+@media screen and (max-width: 1296px) {
+  .header::after {
+    display: none;
+  }
+  .header__image.desktop {
+    display: none;
+  }
+  .header__image.mobile {
+    display: block;
+    flex: 0 1 47%;
+    transform: translateX(0);
+  }
+  .header__text {
+    flex: 0 1 53%;
+    transform: translateX(-66px);
+  }
+  .header__title {
+    font-size: 3.5rem;
+  }
+
+  .section-expirience {
+    padding: 80px 0;
+  }
+
+  .philosophy-text {
+    padding: 80px 40px;
+  }
+
+  .section-skillset {
+    padding: 80px 0;
+  }
+  .skillset-content {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .skillset-items {
+    grid-column: 1 / 2;
+  }
+
+  .section-projects {
+    padding: 80px 0;
+  }
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .projects-col {
+    gap: 48px;
+  }
+  .projects-btn {
+    display: none;
+  }
+
+  .instagram-text {
+    padding: 80px 40px;
+  }
+
+  .section-dribbble {
+    padding: 80px 0;
+  }
+
+  .section-reviews {
+    padding: 80px 0;
+  }
+  .reviews-items {
+    gap: 64px;
+  }
+  .reviews-content {
+    gap: 20px;
+  }
+  .review-item__content {
+    padding: 32px;
+  }
+
+  .section-travels {
+    padding: 80px 0;
+  }
+  .travels-tabs__item.active {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-form {
+    padding: 80px 0;
+  }
+
+  .footer-menu__list {
+    gap: 138px;
+  }
+  .copyright {
+    max-width: 285px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .header-top {
+    position: sticky;
+  }
+  .header-content {
+    flex-direction: column;
+    padding: 0 0 48px;
+    gap: 48px;
+  }
+  .header__text {
+    transform: translateX(0);
+    padding-inline: 20px;
+  }
+  .header__title {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  .header__image.desktop {
+    display: block;
+    flex: 1;
+    height: auto;
+    transform: translateX(0);
+  }
+  .header__image.mobile {
+    display: none;
+  }
+  .header__menu {
+    overflow-y: hidden;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 150px 0 30px;
+    transform: translateX(100%);
+    transition: -webkit-transform 0.4s linear;
+    transition: transform 0.4s linear;
+    transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+    background-color: #000;
+  }
+  .header__menu.active{
+    transform: translateX(0);
+  }
+  .header__menu-list {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .header__menu-link {
+    display: flex;
+    align-items: center;
+    min-height: auto;
+    padding-block: 12px;
+    padding-inline: 24px;
+    color: var(--text-color);
+    font-size: 1rem;
+  }
+  .burger-btn {
+    display: block;
+    width: 18px;
+    height: 11px;
+  }
+  .burger-btn.active::before {
+    transform: rotate(45deg);
+  }
+  .burger-btn.active::after {
+    width: 100%;
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .burger-btn::before {
+    width: 100%;
+    top: 0;
+  }
+  .burger-btn::after {
+    bottom: 0;
+    width: 75%;
+  }
+  .burger-btn::after,
+  .burger-btn::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+  }
+
+  .heading__title {
+    font-size: 2rem;
+  }
+  .section-expirience {
+    padding: 48px 0;
+  }
+  .expirience-list {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .philosophy-content {
+    grid-template-columns: 1fr;
+  }
+  .philosophy-text {
+    padding: 48px 20px;
+  }
+  .philosophy-text__text {
+    margin-bottom: 91px;
+  }
+  .philosophy-text__title {
+    margin-bottom: 8px;
+  }
+
+  .section-projects {
+    padding: 72px 0 64px;
+  }
+  .skillset-items {
+    grid-template-columns: 1fr;
+  }
+
+  .section-projects {
+    padding: 64px 0 70px;
+  }
+
+  .instagram-content {
+    grid-template-columns: 1fr;
+  }
+  .instagram-text {
+    padding: 48px 20px;
+  }
+  .instagram-text__text {
+    margin-bottom: 91px;
+  }
+  .instagram-text__title {
+    margin-bottom: 8px;
+  }
+
+  .section-dribbble {
+    padding: 64px 0;
+  }
+  .dribbble-text {
+    margin-bottom: 64px;
+  }
+  .dribbble-img.desktop {
+    display: none;
+  }
+  .dribbble-img.mobile {
+    display: block;
+  }
+
+  .section-reviews {
+    padding: 48px 0;
+  }
+  .reviews-content {
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+  .reviews-items {
+    gap: 48px;
+  }
+
+  .section-travels {
+    padding: 48px 0;
+  }
+  .travels-tabs__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .travels-tabs__item.active {
+    grid-template-columns: 1fr;
+  }
+
+  .section-form {
+    padding: 48px 0;
+  }
+  .form-content {
+    gap: 48px;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .footer-menu__list {
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+  }
+}
